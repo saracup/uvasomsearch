@@ -1,0 +1,160 @@
+/*search form and results in context of page*/
+fieldset {
+	border:none;
+	padding:0;
+	margin:0;
+}
+/*********wrap div for results and people search*****/
+ .search #content-sidebar-wrap {
+width:100%;}
+ .search #content, #content {
+width:100%; }
+ .rfd.search #content, #content {
+width:70%; }
+ .google.rfd.search #content, #content {
+width:100%; }
+
+/*******search results display**********/
+div#search-results {
+	width:690px;
+	float:left;
+	clear:none;
+	margin-right:20px;
+	min-height:200px;
+	background:url(../images/ajax-loader_large.gif);
+	background-repeat:no-repeat;
+	background-position:center 70px;
+}
+div#people-results {
+	width:260px;
+	float:left;
+	clear:none;
+}
+div#people-results ul.content, div#people-results ul.content li {
+	list-style-type:none;
+	list-style-image:none;
+	padding-top:5px;
+	margin-left:0;
+	padding-left:0;
+}
+div#people-results ul.content li {
+	padding: 8px;
+	border: 1px dotted #ccc;
+	background: #f7f7f7;
+	margin-bottom: 8px;
+}
+div#people-results ul.content li p {
+	margin:0;
+	padding:0;
+	line-height:1.3;
+	color:#666;
+	font-family:'proxima-nova-condensed',sans-serif;
+	font-size:1.1em;
+	font-weight:600;
+}
+div#people-results ul.content li p.name {
+	font-weight:600;
+	color:#336699;
+	text-transform:uppercase;
+}
+div#people-results ul.content li p span.label {
+	font-weight:300;
+}
+div#people-results ul.content li p span.none {
+	font-weight:300;
+	font-style:italic;
+}
+div#people-results h1, div#search-results h1 {
+	font-size: 1.5em;
+	margin: 8px 0 8px 0;
+	padding: 0;
+	border-bottom: 1px solid #ff7003;
+	color: #336699;
+	font-family: 'adobe-caslon-pro',serif;
+}
+div#search-results h1 {
+	margin-left:15px;
+}
+div#people-results .page_navigation a {
+	padding: 3px 3px 0px 3px;
+	background: #f7f7f7;
+	border:1px solid #ccc;
+	margin: 3px;
+	color:#336699;
+	font-family:'proxima-nova-condensed',sans-serif;
+	min-width:15px;
+	display:inline-block;
+	zoom:1;
+	text-align:center;
+}
+div#people-results .page_navigation a.active_page {
+	background:#336699;
+	color:#fff;
+	border:1px solid #ccc;
+}
+
+/*******Search Widget***********/
+.uvasomsearch_widget_box #uvasom_sitesearch {
+width: 96%;
+padding:2%;
+float: left;
+clear: none;
+margin: 0;
+background:#f7f7f7;
+
+}
+.uvasomsearch_widget_box #uvasom_sitesearch input[type="submit"] {
+margin: 0 3px 0 0;
+float: right;
+width: 25px;
+height: 25px;
+border: 0;
+background: none;
+background-color: transparent;
+color: transparent;
+background-image: url(/sharedassets/images/sprites.png);
+background-position: -82px 0;
+background-repeat: no-repeat;
+font-size: 0px;
+}
+.uvasomsearch_widget_box #uvasom_sitesearch input[type="text"] {
+width: 82%;
+margin-right: 15px;
+background:none;
+border:none;
+font-size:1.0em;
+}
+/*******responsive***********/
+@media only screen and (max-width: 600px) {
+	div#search-results {
+	width:98% !important;
+	float:none;
+	clear:both;
+	}
+	div#people-results {
+	width: 95% !important;
+	float: none;
+	clear: both;
+	margin: 0 15px;
+	padding-right: 15px;	
+	}
+	div#people-results ul.content li p {
+	font-size:0.9em;
+	}
+}
+@media only screen and (max-width: 768px) {
+	div#people-results ul.content li p {
+	font-size:0.9em;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	div#search-results {
+	width:63%;
+	}
+	div#people-results {
+	width:28%;
+	}
+	div#people-results h1, div#search-results h1 {
+	font-size: 1.3em;
+	}
+}
